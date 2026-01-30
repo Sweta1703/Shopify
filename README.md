@@ -1,8 +1,13 @@
-# Chai Culture 🍵
+# Chai Culture - Premium Indian Chai E-Commerce Store
 
-Premium Indian chai brand inspired by royal heritage, warmth, and authenticity.
+> A modern MERN stack e-commerce application showcasing premium Indian chai blends with a royal, elegant aesthetic.
 
-## Project Structure
+## 🌐 Live Demo
+**[View Live Application →](https://shopify-bkk9.vercel.app/)**
+
+---
+
+## Project Overview
 
 ```
 chai-culture/
@@ -102,20 +107,6 @@ node seeder.js
 - Express
 - MongoDB with Mongoose
 - CORS
-
-## Deployment
-
-### Vercel Deployment
-
-This application can be deployed to Vercel. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
-
-**Quick steps:**
-1. Set up MongoDB Atlas (cloud database)
-2. Deploy backend to Vercel with MongoDB URI as environment variable
-3. Deploy frontend to Vercel
-4. Update frontend API URL to point to deployed backend
-
-For local development, follow the installation steps above.
 
 ## Tagline
 **Brew the Royal Tradition**
