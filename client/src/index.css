@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+    --color-royal-gold: #D4AF37;
+    --color-deep-brown: #3D2B1F;
+    --color-heritage-brown: #5C4033;
+    --color-cream: #FDF5E6;
+    --color-cream-dark: #F5E6D3;
+
+    --font-family-heading: 'Playfair Display', serif;
+    --font-family-body: 'Montserrat', sans-serif;
+}
+
+
+@layer base {
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+@layer components {
+    .btn-royal {
+        background-color: #D4AF37;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        border-radius: 0.125rem;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .btn-royal:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card {
+        background-color: white;
+        border: 2px solid rgba(212, 175, 55, 0.2);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border-color: #D4AF37;
+        transform: translateY(-0.25rem);
+    }
+
+    .section-container {
+        max-width: 80rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 4rem 1rem;
+    }
+
+    @media (min-width: 640px) {
+        .section-container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .section-container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out;
+}
